@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('dependencies') {
       steps {
-        sh 'sh \'npm i\''
+        sh '\'npm i\''
       }
     }
 
@@ -15,7 +15,7 @@ pipeline {
 
     stage('e2e tests') {
       steps {
-        sh 'sh \'npm run test\''
+        sh '\'npm run test\''
       }
     }
 
