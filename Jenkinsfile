@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage('dependencies') {
       steps {
-        sh '\'npm i\''
+        '\'npm i\''
       }
     }
 
     stage('build') {
       steps {
-        sh 'echo \'build process\''
+        'echo \'build process\''
       }
     }
 
     stage('e2e tests') {
       steps {
-        sh '\'npm run test\''
+        '\'npm run test\''
       }
     }
 
